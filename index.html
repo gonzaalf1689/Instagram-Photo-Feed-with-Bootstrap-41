@@ -33,10 +33,16 @@
                                 aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Create a new post</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
                                         <div class="modal-body">
                                             <label for="query" class="form-label"></label>
-                                            <textarea id="" class="form-control" style="height: 140px"
-                                                placeholder="Write a caption ..."></textarea>
+                                            <textarea id="" class="form-control" style="height: 100px"
+                                                placeholder="Add the caption of your post here"></textarea>
                                         </div>
                                         <div class="inline p-2">
                                             <button type="button" class="btn btn-light">
@@ -60,11 +66,11 @@
                                     <i class="fa-solid fa-gear"></i>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <li><button class="dropdown-item" type="button">Action</button></li>
-                                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                                    <li><button class="dropdown-item" type="button">Profile</button></li>
+                                    <li><button class="dropdown-item" type="button">Accessibility</button></li>
+                                    <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
                                     <div class="dropdown-divider"></div>
-                                    <li><button class="dropdown-item" type="button">Log Out</button></li>
+                                    <li><button class="dropdown-item text-danger" type="button">Log Out</button></li>
                                 </ul>
                             </div>
                         </ul>
@@ -73,49 +79,108 @@
             </div>
         </nav>
     </div>
-    <!--Grid view-->
-    <div>
-        <div class="row">
-            <div class="col-4">
-                <img src="https://loremflickr.com/320/240" class="img-fluid" style="width: 100%; height: 100%">
+    <ul class="nav nav-pills mb-3 justify-content-center m-1" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active border-0" id="pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i class="fa-solid fa-grip"></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link border-0" id="pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                aria-selected="false"><i class="fa-solid fa-square"></i>
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <!--Grid view-->
+            <div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://files.worldwildlife.org/wwfcmsprod/images/Lion_WWFGIFTS_cover_2020/magazine_small/2wafu1bmcz_b21fc8e6.jpeg"
+                            class="img-fluid" style="width: 100%; height: 100%">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://miro.medium.com/max/1400/1*d20hE3eOKmPQoyhyveHAxQ.jpeg" class="img-fluid"
+                            style="width: 100%; height: 100%">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://cdn.britannica.com/72/272-050-71EF3E36/African-elephant-Kenya.jpg"
+                            class="img-fluid" style="width: 100%; height: 100%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://www.otterspecialistgroup.org/osg-newsite/wp-content/uploads/2017/04/ThinkstockPhotos-827261360.jpg"
+                            class="img-fluid" style="width: 100%; height: 100%">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://assets.answersingenesis.org/img/articles/aqua/Killer_Whale.jpg"
+                            class="img-fluid" style="width: 100%; height: 100%">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://images7.alphacoders.com/478/478474.jpg" class="img-fluid"
+                            style="width: 100%; height: 100%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/is-it-really-that-high-ring-tailed-lemur-margaret-saheed.jpg"
+                            class="img-fluid" style="width: 100%; height: 100%">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://www.mlive.com/resizer/WrbocQa7Poam24rmeYf3hRvzzYI=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/HKR2XSHXLBEK3H46A3NQ73SMHI.JPG"
+                            class="img-fluid" style="width: 100%; height: 100%">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://wallpapercave.com/wp/wp2538085.jpg" class="img-fluid"
+                            style="width: 100%; height: 100%">
+                    </div>
+                </div>
             </div>
-            <div class="col-4">
-                <img src="https://loremflickr.com/320/240" class="img-fluid" style="width: 100%; height: 100%">
-            </div>
-            <div class="col-4">
-                <img src="https://loremflickr.com/320/240" class="img-fluid" style="width: 100%; height: 100%">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="https://loremflickr.com/320/240" class="img-fluid" style="width: 100%; height: 100%">
-            </div>
-            <div class="col-4">
-                <img src="https://loremflickr.com/320/240" class="img-fluid" style="width: 100%; height: 100%">
-            </div>
-            <div class="col-4">
-                <img src="https://loremflickr.com/320/240" class="img-fluid" style="width: 100%; height: 100%">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="https://loremflickr.com/320/240" class="img-fluid" style="width: 100%; height: 100%">
-            </div>
-            <div class="col-4">
-                <img src="https://loremflickr.com/320/240" class="img-fluid" style="width: 100%; height: 100%">
-            </div>
-            <div class="col-4">
-                <img src="https://loremflickr.com/320/240" class="img-fluid" style="width: 100%; height: 100%">
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                <!--Feed View-->
+                <div class="container" style="width: 600px;" ; margin:auto">
+                    <div class="card">
+                        <div class="row">
+                            <h3 class="card-title col-10">Japanese Akitainu</h3>
+                            <span class="col-2 aling-self-start text-secondary">
+                                <h5>12/15</h5>
+                            </span>
+                        </div>
+                        <img src="https://files.worldwildlife.org/wwfcmsprod/images/Lion_WWFGIFTS_cover_2020/magazine_small/2wafu1bmcz_b21fc8e6.jpeg"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <p class="font-weight-bold">98 likes</p>
+                            <p class="card-text text-dark">Descending from regional hunting dogs, the Japanese Akitainu
+                                was initially restored and preserved by dedicated breeders in the Akitainu Hozonkai (Akita
+                                Dog Preservation Society; AKIHO). The breed is known for its striking appearance and its
+                                physical and mental agility.</p>
+                            <div class=row>
+                                <div class="col-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                                <p style="color: gray;"">Comment...</p>
+                            </div>
+                        </div>
+
+                     </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 
 </html>
